@@ -239,7 +239,7 @@ const About = () => {
       </section>
 
       {/* 6. Certifications & Badges */}
-      <section className="py-12 md:py-20 text-center max-w-7xl mx-auto px-4">
+      <section className="section-canvas-alt py-14 md:py-24 text-center px-4 [&>*]:max-w-7xl [&>*]:mx-auto">
         <div className="relative rounded-3xl bg-slate-50 border border-slate-200/80 p-8 md:p-12 overflow-hidden shadow-sm max-w-4xl mx-auto">
           <div className="absolute -top-12 -left-12 w-32 h-32 bg-accent-500/5 rounded-full" />
           <div className="p-4 bg-accent-500/10 rounded-2xl text-accent-600 border border-accent-500/20 w-fit mx-auto mb-6">
