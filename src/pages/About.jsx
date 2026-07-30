@@ -48,19 +48,15 @@ const About = () => {
 
 
       {/* 2. Brand Story, Mission & Vision */}
-      <section className="py-12 md:py-20 relative overflow-hidden bg-white border-b border-slate-200/60">
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.02]">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        </div>
-
+      <section className="section-canvas py-14 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-6 space-y-6">
-              <span className="section-eyebrow text-accent-500 mb-2 inline-block">OUR STORY</span>
-              <h2 className="text-3xl md:text-5xl font-bold font-serif text-slate-900 leading-tight">
-                Our Journey & Legacy
+              <span className="section-kicker">Our Story</span>
+              <h2 className="section-title">
+                Our Journey & <span className="title-accent">Legacy</span>
               </h2>
-              <div className="h-1 w-20 bg-accent-500 rounded-full" />
+              <div className="accent-rule" />
               <div className="text-slate-600 text-sm sm:text-base leading-relaxed space-y-4 whitespace-pre-line font-light">
                 {settings?.about?.story || "At Srinidhi Infra Developers, we believe that constructing homes and business hubs is a sacred duty. We started our journey in Hyderabad with a simple goal: to provide high-quality, legally sound real estate that stands the test of time.\n\nOver the last decade, we have successfully developed premium residential townships, commercial workspaces, and highly profitable open layouts. By prioritizing strategic locations, utilizing premium building materials, and strictly complying with state mandates like RERA, we have earned the trust of thousands of clients."}
               </div>
@@ -94,7 +90,8 @@ const About = () => {
       </section>
 
       {/* 3. Core Values */}
-      <section className="py-10 md:py-16 bg-white">
+      <section className="section-canvas-alt py-14 md:py-20">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Bordered card with image background — not full width */}
           <div className="relative rounded-3xl overflow-hidden border border-slate-200/60 shadow-xl">
@@ -136,7 +133,7 @@ const About = () => {
 
 
       {/* 4. Leadership Section */}
-      <section className="py-12 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-white">
+      <section className="section-canvas-tint py-14 md:py-24 px-4 sm:px-6 lg:px-8 [&>*]:max-w-7xl [&>*]:mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="section-eyebrow text-accent-500 mb-4 inline-block">MANAGEMENT</span>
           <h2 className="text-3xl md:text-5xl font-bold font-serif text-slate-900">Our Leadership Team</h2>
@@ -167,7 +164,7 @@ const About = () => {
       </section>
 
       {/* 5. Timeline / Milestones */}
-      <section className="py-10 md:py-16 bg-white">
+      <section className="section-canvas py-14 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-800 shadow-2xl overflow-hidden bg-slate-950 text-white p-6 sm:p-10 md:p-16">
             {/* Tech Grid Pattern inside the section */}
@@ -242,7 +239,7 @@ const About = () => {
       </section>
 
       {/* 6. Certifications & Badges */}
-      <section className="py-12 md:py-20 text-center max-w-7xl mx-auto px-4">
+      <section className="section-canvas-alt py-14 md:py-24 text-center px-4 [&>*]:max-w-7xl [&>*]:mx-auto">
         <div className="relative rounded-3xl bg-slate-50 border border-slate-200/80 p-8 md:p-12 overflow-hidden shadow-sm max-w-4xl mx-auto">
           <div className="absolute -top-12 -left-12 w-32 h-32 bg-accent-500/5 rounded-full" />
           <div className="p-4 bg-accent-500/10 rounded-2xl text-accent-600 border border-accent-500/20 w-fit mx-auto mb-6">

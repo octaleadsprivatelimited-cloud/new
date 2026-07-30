@@ -103,4 +103,110 @@
   .card-sheen:hover::before {
     @apply opacity-100;
   }
+
+  /* ---- Unified section backgrounds (WordPress-theme style bands) ---- */
+  .section-canvas,
+  .section-canvas-alt,
+  .section-canvas-tint,
+  .section-canvas-deep {
+    @apply relative overflow-hidden isolate;
+  }
+
+  .section-canvas::before,
+  .section-canvas-alt::before,
+  .section-canvas-tint::before,
+  .section-canvas-deep::before {
+    content: '';
+    @apply absolute inset-0 -z-10 pointer-events-none;
+  }
+
+  .section-canvas::after,
+  .section-canvas-alt::after,
+  .section-canvas-tint::after,
+  .section-canvas-deep::after {
+    content: '';
+    @apply absolute inset-x-0 top-0 h-px -z-10 pointer-events-none bg-gradient-to-r from-transparent via-accent-400/60 to-transparent;
+  }
+
+  /* Light blueprint grid */
+  .section-canvas {
+    background:
+      radial-gradient(900px 420px at 12% -10%, rgba(4, 120, 87, 0.08), transparent 60%),
+      radial-gradient(760px 380px at 92% 110%, rgba(30, 41, 59, 0.07), transparent 60%),
+      linear-gradient(160deg, #ffffff 0%, #f8fafc 55%, #f1f5f9 100%);
+  }
+  .section-canvas::before {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+    background-size: 3.5rem 3.5rem;
+    -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 0%, #000 55%, transparent 100%);
+    mask-image: radial-gradient(ellipse 75% 65% at 50% 0%, #000 55%, transparent 100%);
+  }
+
+  /* Diagonal engineering hatch */
+  .section-canvas-alt {
+    background:
+      radial-gradient(820px 400px at 88% -10%, rgba(4, 120, 87, 0.09), transparent 60%),
+      radial-gradient(700px 360px at 5% 105%, rgba(52, 211, 153, 0.1), transparent 62%),
+      linear-gradient(200deg, #ffffff 0%, #f8fafc 60%, #eef2f7 100%);
+  }
+  .section-canvas-alt::before {
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(15, 23, 42, 0.045) 0px,
+      rgba(15, 23, 42, 0.045) 1px,
+      transparent 1px,
+      transparent 14px
+    );
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 45%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 45%, transparent 100%);
+  }
+
+  /* Soft tinted band */
+  .section-canvas-tint {
+    background:
+      radial-gradient(760px 380px at 50% -15%, rgba(4, 120, 87, 0.1), transparent 62%),
+      linear-gradient(180deg, #f8fafc 0%, #ffffff 45%, #f1f5f9 100%);
+  }
+  .section-canvas-tint::before {
+    background-image: radial-gradient(rgba(4, 120, 87, 0.09) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 40%, transparent 100%);
+  }
+
+  /* Dark navy band */
+  .section-canvas-deep {
+    background:
+      radial-gradient(720px 360px at 15% 0%, rgba(4, 120, 87, 0.25), transparent 60%),
+      radial-gradient(640px 340px at 90% 100%, rgba(59, 111, 160, 0.22), transparent 62%),
+      linear-gradient(150deg, #0f172a 0%, #131f3a 55%, #0b1120 100%);
+  }
+  .section-canvas-deep::before {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 0%, #000 55%, transparent 100%);
+    mask-image: radial-gradient(ellipse 75% 65% at 50% 0%, #000 55%, transparent 100%);
+  }
+
+  /* ---- Shared heading rhythm ---- */
+  .section-kicker {
+    @apply block text-accent-600 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.35em] mb-4;
+  }
+  .section-kicker-light {
+    @apply block text-accent-300 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.35em] mb-4;
+  }
+  .section-title {
+    @apply text-3xl md:text-5xl font-extrabold font-serif uppercase text-slate-900 leading-tight;
+  }
+  .section-title-light {
+    @apply text-3xl md:text-5xl font-extrabold font-serif uppercase text-white leading-tight;
+  }
+  .title-accent {
+    @apply bg-gradient-to-r from-accent-600 to-emerald-500 bg-clip-text text-transparent;
+  }
+  .surface-card {
+    @apply relative bg-white/85 backdrop-blur-sm border border-slate-200/80 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-400/50 hover:-translate-y-1.5 transition-all duration-300;
+  }
 }

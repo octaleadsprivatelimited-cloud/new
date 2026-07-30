@@ -288,7 +288,7 @@ const Home = () => {
       </motion.section>
 
       {/* 2.5. ABOUT US SECTION */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="section-canvas-tint py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden bg-gradient-to-br from-white via-slate-50 to-accent-50/40 p-6 sm:p-10 md:p-14">
             {/* Soft construction gradient wash */}
@@ -373,7 +373,8 @@ const Home = () => {
 
 
       {/* 4. HOME CONSTRUCTION PACKAGES */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="section-canvas py-10 md:py-16">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden bg-slate-50/50 p-6 sm:p-10 md:p-14 premium-grid">
             {/* Glow Blobs */}
@@ -450,7 +451,8 @@ const Home = () => {
       </section>
 
       {/* 5. WHY CHOOSE US / OUR QUALITY */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="section-canvas-alt py-10 md:py-16">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden bg-gradient-to-bl from-white via-slate-50 to-accent-50/40 p-6 sm:p-10 md:p-14">
             {/* Soft construction gradient wash */}
@@ -673,7 +675,7 @@ const Home = () => {
       </section>
 
       {/* 7. CONTACT / ENQUIRY BANNER */}
-      <section className="bg-white py-12 md:py-20 border-y border-slate-200/60 relative overflow-hidden">
+      <section className="section-canvas-tint py-12 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl bg-slate-950 text-white p-8 md:p-12 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-slate-900">
             {/* Tech Grid Pattern inside the card */}
