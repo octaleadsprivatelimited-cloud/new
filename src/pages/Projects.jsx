@@ -71,11 +71,9 @@ const Projects = () => {
 
 
       {/* Filter and Content Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12 relative overflow-hidden">
-        {/* Glow Blob */}
-        <div className="glow-blob w-96 h-96 bg-accent-400/10 top-20 right-10" />
+      <section className="section-canvas py-10 md:py-16 px-4 sm:px-6 lg:px-8 [&>*]:max-w-7xl [&>*]:mx-auto">
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl border border-slate-200/80 p-6 shadow-sm mb-10 flex flex-col gap-6 relative z-10">
 
-        <div className="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm mb-10 flex flex-col gap-6 relative z-10">
           {/* Header for filters */}
           <div className="flex items-center text-slate-800 font-bold border-b border-slate-100 pb-3">
             <Filter className="h-4.5 w-4.5 mr-2 text-accent-600" />
