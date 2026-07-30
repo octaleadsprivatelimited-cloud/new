@@ -450,7 +450,8 @@ const Home = () => {
       </section>
 
       {/* 5. WHY CHOOSE US / OUR QUALITY */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="section-canvas-alt py-10 md:py-16">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden bg-gradient-to-bl from-white via-slate-50 to-accent-50/40 p-6 sm:p-10 md:p-14">
             {/* Soft construction gradient wash */}
