@@ -90,7 +90,8 @@ const About = () => {
       </section>
 
       {/* 3. Core Values */}
-      <section className="py-10 md:py-16 bg-white">
+      <section className="section-canvas-alt py-14 md:py-20">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Bordered card with image background — not full width */}
           <div className="relative rounded-3xl overflow-hidden border border-slate-200/60 shadow-xl">
