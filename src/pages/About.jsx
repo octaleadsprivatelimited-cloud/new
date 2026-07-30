@@ -164,7 +164,7 @@ const About = () => {
       </section>
 
       {/* 5. Timeline / Milestones */}
-      <section className="py-10 md:py-16 bg-white">
+      <section className="section-canvas py-14 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-800 shadow-2xl overflow-hidden bg-slate-950 text-white p-6 sm:p-10 md:p-16">
             {/* Tech Grid Pattern inside the section */}
