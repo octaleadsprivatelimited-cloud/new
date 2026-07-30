@@ -116,11 +116,11 @@ const Services = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-            <span className="block text-accent-600 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.35em] mb-4">The Process</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold font-serif uppercase text-slate-900 leading-tight">
-              Our Execution <span className="bg-gradient-to-r from-accent-600 to-emerald-500 bg-clip-text text-transparent">Workflow</span>
+            <span className="section-kicker-light">The Process</span>
+            <h2 className="section-title-light">
+              Our Execution <span className="bg-gradient-to-r from-accent-300 to-emerald-200 bg-clip-text text-transparent">Workflow</span>
             </h2>
-            <p className="text-slate-600 text-sm mt-5 leading-relaxed">
+            <p className="text-slate-300 text-sm mt-5 leading-relaxed">
               Structured workflows ensure precision, predictability, and complete peace of mind.
             </p>
           </div>
@@ -133,11 +133,12 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, delay: idx * 0.07 }}
-                className="group relative bg-white/85 backdrop-blur-sm border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 hover:border-accent-400/50 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
+                className="group relative bg-white/[0.07] backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-lg hover:bg-white/[0.12] hover:border-accent-400/40 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
               >
-                <span className="text-4xl font-black bg-gradient-to-br from-accent-500/30 to-emerald-500/20 bg-clip-text text-transparent block mb-4 font-sans">{w.step}</span>
-                <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2 group-hover:text-accent-700 transition-colors">{w.name}</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">{w.desc}</p>
+                <span className="text-4xl font-black bg-gradient-to-br from-accent-300 to-emerald-200 bg-clip-text text-transparent block mb-4 font-sans">{w.step}</span>
+                <h3 className="text-sm sm:text-base font-bold text-white mb-2 group-hover:text-accent-300 transition-colors">{w.name}</h3>
+                <p className="text-xs text-slate-300/90 leading-relaxed">{w.desc}</p>
+
               </motion.div>
             ))}
           </div>
