@@ -673,7 +673,7 @@ const Home = () => {
       </section>
 
       {/* 7. CONTACT / ENQUIRY BANNER */}
-      <section className="bg-white py-12 md:py-20 border-y border-slate-200/60 relative overflow-hidden">
+      <section className="section-canvas-tint py-12 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl bg-slate-950 text-white p-8 md:p-12 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-slate-900">
             {/* Tech Grid Pattern inside the card */}
