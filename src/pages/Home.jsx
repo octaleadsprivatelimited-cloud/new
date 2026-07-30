@@ -373,7 +373,8 @@ const Home = () => {
 
 
       {/* 4. HOME CONSTRUCTION PACKAGES */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="section-canvas py-10 md:py-16">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden bg-slate-50/50 p-6 sm:p-10 md:p-14 premium-grid">
             {/* Glow Blobs */}
