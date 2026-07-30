@@ -35,9 +35,8 @@ const Blog = () => {
 
 
       {/* Blog Listing Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 relative overflow-hidden">
-        {/* Glow Blob */}
-        <div className="glow-blob w-96 h-96 bg-accent-400/10 top-20 right-10" />
+      <section className="section-canvas py-12 md:py-20 px-4 sm:px-6 lg:px-8 [&>*]:max-w-7xl [&>*]:mx-auto">
+
 
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 relative z-10">
