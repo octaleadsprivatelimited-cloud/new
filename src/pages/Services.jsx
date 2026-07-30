@@ -178,8 +178,8 @@ const Services = () => {
       </section>
 
       {/* Footprint Section */}
-      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-white to-slate-50">
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-400/60 to-transparent" />
+      <section className="section-canvas-tint py-16 md:py-24">
+
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="p-3.5 w-fit mx-auto bg-accent-500/10 rounded-xl text-accent-600 border border-accent-500/20 mb-5">
             <MapPin className="h-6 w-6" />
