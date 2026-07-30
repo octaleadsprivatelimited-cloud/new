@@ -111,10 +111,8 @@ const Services = () => {
       </section>
 
       {/* Workflow Section */}
-      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-bl from-white via-slate-50 to-accent-50/40">
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-400/60 to-transparent" />
-        <div className="absolute inset-0 opacity-[0.05] bg-[repeating-linear-gradient(45deg,#0f172a_0px,#0f172a_1px,transparent_1px,transparent_14px)]" />
-        <div className="absolute top-1/3 -right-32 w-[460px] h-[460px] rounded-full bg-accent-400/10 blur-3xl" />
+      <section className="section-canvas-deep py-16 md:py-24">
+
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
