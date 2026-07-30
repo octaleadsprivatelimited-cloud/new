@@ -147,10 +147,8 @@ const Services = () => {
       </section>
 
       {/* Addons & Complementary Services */}
-      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-white via-slate-50 to-emerald-50/40">
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-400/60 to-transparent" />
-        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_100%,#000_60%,transparent_100%)]" />
-        <div className="absolute -bottom-24 -left-24 w-[420px] h-[420px] rounded-full bg-emerald-400/10 blur-3xl" />
+      <section className="section-canvas-alt py-16 md:py-24">
+
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
